@@ -3,7 +3,7 @@ on:
   workflow_call:
   push:
     branches:
-      - main
+      #- main
       - build
   pull_request:
     branches:

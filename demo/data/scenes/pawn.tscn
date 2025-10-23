@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxftbrsqonp0d"]
+[gd_scene load_steps=5 format=3 uid="uid://cxftbrsqonp0d"]
 
 [ext_resource type="Script" uid="uid://cytb8kqf7q1hv" path="res://data/scripts/pawn.gd" id="1_yv2lj"]
+[ext_resource type="Texture2D" uid="uid://b5mq3h4a7kwex" path="res://data/resources/world_map_temp.png" id="2_0gfc1"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_gjdht"]
 
@@ -20,3 +21,11 @@ shape = SubResource("CapsuleShape3D_yv2lj")
 
 [node name="Camera3D" type="Camera3D" parent="PlayerPawn"]
 transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, 8, 12, 8)
+
+[node name="WorldMap" type="WorldMap" parent="."]
+world_map_texture = ExtResource("2_0gfc1")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
